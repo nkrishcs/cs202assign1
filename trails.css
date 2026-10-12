@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1rem;
+  font: normal 1rem/1.6 'Merriweather', Georgia, serif;
+  background-color: #f7f9fa;
+  color: #262a33;
+}
+
+/* 5.2 Restore readable list spacing, bullets, and numbering */
+ul, ol {
+  margin: 1rem 0 1.5rem 2.25rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+/* 5.4 (b), (c): Distinct Heading Font Family */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  color: #1c4d39;
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 2.25rem; 
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  border-bottom: 2px solid #9ab8a8;
+  padding-bottom: 0.35rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+/*Page Header*/
+header {
+  background-image: url('https://cdn.backpacker.com/wp-content/uploads/2024/06/South-Bluff-Sunrise-2-6-15-2024.jpg?width=1920&auto=webp&quality=75&fit=cover');
+  background-color: #668608;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  padding: 4rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+header h1 {
+  color: #ffffff;
+  text-shadow: 5px 5px 12px rgba(0, 0, 0, 0.85);
+  margin-bottom: 1.5rem;
+}
+
+header p {
+  /* 5.5 (d): Tagline styling */
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+  margin-bottom: 0;
+}
+
+/*Nav bar*/
+nav {
+  background-color: #ffffff;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0,1);
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: Center;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 0;
+}
+/*different links to files*/
+a[href^="#"] {
+  color: #1e5f74;
+  font-weight: 600;
+  text-decoration-line: underline;
+  text-decoration-color: #1e5f74;
+  text-decoration-style: solid;
+}
+
+a[href^="https"] {
+  color: #8c4a16;
+  font-weight: 600;
+  text-decoration-line: underline;
+  text-decoration-color: #8c4a16;
+  text-decoration-style: wavy;
+}
+
+a[href$=".pdf"] {
+  color: #a31d1d;
+  font-weight: 700;
+  text-decoration-line: underline;
+  text-decoration-color: #a31d1d;
+  text-decoration-style: double;
+}
+
+article {
+  /* 5.7 (a): Card styling */
+  background-color: #ffffff;
+  border: 1px solid #b1cdf3;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  padding: 1.75rem;
+  margin: 2rem 0;
+}
+
+article h2 {
+  border-bottom: none;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+article hgroup p {
+  color: #4b566a;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+#grandad-bluff {
+  border: 3px double #d97706; /* Distinct double border style and amber color */
+  box-shadow: 0 6px 14px rgba(217, 119, 6, 0.15);
+}
+
+/*Difficulty*/
+[class*="difficulty-"] {
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  letter-spacing: 0.05em;
+}
+
+.difficulty-easy {
+  background-color: #2a852f;
+  color: #ffffff;
+}
+
+.difficulty-moderate {
+  background-color: #f8ce33; 
+  color: #ffffff;
+}
+
+.difficulty-strenuous {
+  background-color: #cb1d1d;
+  color: #ffffff;
+}
+
+/*Trail photos */
+article > img {
+  width: 100%;
+  max-height: 22rem;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #c8d0d8;
+  margin: 0.75rem 0 1.25rem 0;
+  display: block;
+}
+
+/* just bag icon */
+img[alt=""]{
+    width: 1.5em;         
+    height: auto;
+    vertical-align: middle; 
+    margin-left: 0.5rem; 
+    display: inline-block;
+}
+
+ol[reversed] {
+  list-style-type: decimal-leading-zero;
+  background-color: #eef2f5;
+  padding: 1.25rem 1.5rem 1.25rem 3rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+section[id="countdown"] h3 {
+  margin-left: 2rem;
+}
+
+ol[start='6'] {
+  list-style-type: decimal-leading-zero;
+  background-color: #eef2f5;
+  padding: 1.25rem 1.5rem 1.25rem 3rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+ol[reversed] li {
+  margin-bottom: 0.75rem;
+}
+
+ol[type="a"] {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: #627182;
+  margin: 0.35rem 0 0.5rem 1.5rem;
+}
+
+dt {
+  font-variant: small-caps;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #1a2e26;
+  margin-top: 0.8rem;
+}
+
+dd {
+  margin-left: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+aside {
+  background-color: hsla(48, 96%, 89%, 0.75);
+  border-left: 8px solid #e07903;
+  padding: 1.25rem 1.5rem;
+  outline: 2px solid #b45309;
+  border-radius: 0 6px 6px 0;
+  margin: 2.5rem 0;
+}
+
+aside h3 {
+  color: #8d3a07;
+  margin-top: 0;
+}
+/*footer*/
+footer {
+  text-align: center;
+  font-size: 0.88rem;
+  border-top: 2px solid #d0d7de;
+  margin-top: 3.5rem;
+  padding: 2.5rem 1rem;
+  color: #3d6089;
+}
+
+footer address {
+  font-style: normal;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+footer h3 {
+  font-size: 1.05rem;
+  margin-top: 1.25rem;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0.5rem 0 1.25rem 0;
+  padding: 0;
+}
+
+footer li {
+  margin-bottom: 0.35rem;
+}
